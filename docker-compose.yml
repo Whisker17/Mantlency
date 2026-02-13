@@ -1,0 +1,22 @@
+services:
+  mantlency:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mantlency-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Persist wallet data to the mounted volume
+      - WALLET_DATA_FILE=/app/data/wallet_data.txt
+    volumes:
+      - wallet_data:/app/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  wallet_data:

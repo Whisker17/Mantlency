@@ -13,7 +13,7 @@ import { generatePrivateKey, privateKeyToAccount } from "viem/accounts";
 import { mantleSepoliaTestnet } from "viem/chains";
 
 // Configure a file to persist a user's private key if none provided
-const WALLET_DATA_FILE = "wallet_data.txt";
+const WALLET_DATA_FILE = process.env.WALLET_DATA_FILE || "wallet_data.txt";
 
 /**
  * Prepares the AgentKit and WalletProvider.

@@ -1,0 +1,23 @@
+{
+    "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+    "name": "Mantlency",
+    "description": "The Autonomous Architect and Lead Engineer residing on the Mantle Network.",
+    "image": "https://drive.google.com/file/d/1NnGgphgKbgeBGUvH3Dy8utpai2J5yby0/view",
+    "services": [
+        {
+            "name": "agentWallet",
+            "endpoint": "eip155:5003:0x64aa91Fad12EBb282B9fCd2f7b1DB8C8E8daF5D4"
+        }
+    ],
+    "registrations": [
+        {
+            "agentRegistry": "eip155:5003:0x8004A818BFB912233c491871b3d84c89A494BD9e",
+            "agentId": "17"
+        }
+    ],
+    "supportedTrust": [
+        "reputation",
+        "crypto-economic",
+        "tee-attestation"
+    ]
+}
